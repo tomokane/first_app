@@ -8,6 +8,7 @@ class VideosController < ApplicationController
       format.html # index.html.erb
       format.json { render json: @videos }
       format.xml { render xml: @videos }
+      format.atom
     end
   end
 
