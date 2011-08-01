@@ -5,7 +5,7 @@ gem 'rails', '3.1.0.rc5'
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+#gem 'sqlite3'
 
 
 # Gems used only for assets and not required
@@ -17,6 +17,16 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'rake', '0.8.7'
+
+group :production do
+  gem 'pg'
+  gem 'therubyracer-heroku'
+end
+
+group :development do
+  gem 'sqlite3'
+end
 
 # Use unicorn as the web server
 # gem 'unicorn'
