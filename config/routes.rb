@@ -1,4 +1,8 @@
 FirstApp::Application.routes.draw do
+  resources :videos
+
+  root :to => "videos#index"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
